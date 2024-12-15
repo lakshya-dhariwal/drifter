@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Brice-Black';
+    src: url('fonts/Brice-Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-BlackCondensed';
+    src: url('fonts/Brice-BlackCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-BlackExpanded';
+    src: url('fonts/Brice-BlackExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-BlackSemiCondensed';
+    src: url('fonts/Brice-BlackSemiCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-BlackSemiExpanded';
+    src: url('fonts/Brice-BlackSemiExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-Bold';
+    src: url('fonts/Brice-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-BoldCondensed';
+    src: url('fonts/Brice-BoldCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-BoldExpanded';
+    src: url('fonts/Brice-BoldExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-BoldSemiCondensed';
+    src: url('fonts/Brice-BoldSemiCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-BoldSemiExpanded';
+    src: url('fonts/Brice-BoldSemiExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-ExtraLight';
+    src: url('fonts/Brice-ExtraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-ExtraLightCondensed';
+    src: url('fonts/Brice-ExtraLightCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-ExtraLightExpanded';
+    src: url('fonts/Brice-ExtraLightExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-ExtraLightSemiCondensed';
+    src: url('fonts/Brice-ExtraLightSemiCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-ExtraLightSemiExpanded';
+    src: url('fonts/Brice-ExtraLightSemiExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-Light';
+    src: url('fonts/Brice-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-LightCondensed';
+    src: url('fonts/Brice-LightCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-LightExpanded';
+    src: url('fonts/Brice-LightExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-LightSemiCondensed';
+    src: url('fonts/Brice-LightSemiCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-LightSemiExpanded';
+    src: url('fonts/Brice-LightSemiExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-Regular';
+    src: url('fonts/Brice-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-RegularCondensed';
+    src: url('fonts/Brice-RegularCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-RegularExpanded';
+    src: url('fonts/Brice-RegularExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-RegularSemiCondensed';
+    src: url('fonts/Brice-RegularSemiCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-RegularSemiExpanded';
+    src: url('fonts/Brice-RegularSemiExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-SemiBold';
+    src: url('fonts/Brice-SemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-SemiBoldCondensed';
+    src: url('fonts/Brice-SemiBoldCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-SemiBoldExpanded';
+    src: url('fonts/Brice-SemiBoldExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-SemiBoldSemiCondensed';
+    src: url('fonts/Brice-SemiBoldSemiCondensed.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Brice-SemiBoldSemiExpanded';
+    src: url('fonts/Brice-SemiBoldSemiExpanded.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }

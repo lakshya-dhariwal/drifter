@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drifter Surf Hostel - Midigama, Sri Lanka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'drifter-brown': '#433931',
+                        'drifter-light-brown': '#584116',
+                        'drifter-beige': '#CABCAF',
+                        'drifter-soft-beige': '#F1E6E1',
+                        'drifter-yellow': '#D9D49A'
+                    },
+                    fontFamily: {
+                        'brice': ['Brice', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-drifter-soft-beige font-brice text-drifter-brown">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-drifter-brown text-white z-50 shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">Drifter Surf Hostel</div>
+            <div class="space-x-4">
+                <a href="#home" class="hover:text-drifter-beige">Home</a>
+                <a href="#rooms" class="hover:text-drifter-beige">Rooms</a>
+                <a href="#food" class="hover:text-drifter-beige">Food</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen flex items-center justify-center text-center pt-16">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/api/placeholder/1600/900');">
+            <div class="absolute inset-0 bg-drifter-brown opacity-50"></div>
+        </div>
+        <div class="relative z-10 text-white px-4">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Drifter Surf Hostel</h1>
+            <p class="text-xl md:text-2xl mb-8">Your Surf Paradise in Midigama</p>
+            <div class="space-x-4">
+                <a href="#rooms" class="bg-drifter-yellow text-drifter-brown px-6 py-3 rounded-lg hover:bg-opacity-90 transition">View Rooms</a>
+                <a href="#food" class="bg-drifter-beige text-drifter-brown px-6 py-3 rounded-lg hover:bg-opacity-90 transition">Our Kitchen</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12 text-drifter-light-brown">Our Rooms</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Room 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Dorm Room" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-drifter-brown">Dorm Room</h3>
+                    <p class="mb-4">Shared dormitory with comfortable beds and surf vibes.</p>
+                    <p class="font-bold text-drifter-light-brown">From $10/night</p>
+                </div>
+            </div>
+            <!-- Room 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Private Room" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-drifter-brown">Private Room</h3>
+                    <p class="mb-4">Cozy private room with ocean-inspired decor.</p>
+                    <p class="font-bold text-drifter-light-brown">From $25/night</p>
+                </div>
+            </div>
+            <!-- Room 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/api/placeholder/400/300" alt="Deluxe Room" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-drifter-brown">Deluxe Room</h3>
+                    <p class="mb-4">Spacious room with private bathroom and balcony.</p>
+                    <p class="font-bold text-drifter-light-brown">From $40/night</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section id="food" class="bg-drifter-beige py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-drifter-light-brown">Our Kitchen</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-drifter-brown">Fresh Local Cuisine</h3>
+                    <p class="mb-4">Enjoy delicious Sri Lankan and international dishes prepared with fresh, local ingredients.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-2 text-drifter-light-brown" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Breakfast Included
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-2 text-drifter-light-brown" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Local Sri Lankan Cuisine
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 mr-2 text-drifter-light-brown" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Vegetarian & Vegan Options
+                        </li>
+                    </ul>
+                    <a href="#" class="bg-drifter-yellow text-drifter-brown px-6 py-3 rounded-lg hover:bg-opacity-90 transition">View Menu</a>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="/api/placeholder/400/300" alt="Local Dish 1" class="w-full h-48 object-cover rounded-lg">
+                    <img src="/api/placeholder/400/300" alt="Local Dish 2" class="w-full h-48 object-cover rounded-lg">
+                    <img src="/api/placeholder/400/300" alt="Local Dish 3" class="w-full h-48 object-cover rounded-lg">
+                    <img src="/api/placeholder/400/300" alt="Local Dish 4" class="w-full h-48 object-cover rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-drifter-brown text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Drifter Surf Hostel. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-drifter-beige">Contact</a>
+                <a href="#" class="hover:text-drifter-beige">Location</a>
+                <a href="#" class="hover:text-drifter-beige">Book Now</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
