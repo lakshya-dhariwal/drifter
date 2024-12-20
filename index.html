@@ -402,8 +402,8 @@
             </div>
         </div>
 
-<!-- Booking CTA -->
-<div class="mt-12 text-center" x-data="{ 
+        <!-- Booking CTA -->
+        <div class="mt-12 text-center" x-data="{ 
     checkIn: new Date(Date.now() + 86400000).toISOString().split('T')[0], 
     checkOut: new Date(Date.now() + 2 * 86400000).toISOString().split('T')[0], 
     rooms: 1,
@@ -411,44 +411,42 @@
         return `Hey there, I want to book ${this.rooms} room${this.rooms > 1 ? 's' : ''} from ${this.checkIn} to ${this.checkOut} please`;
     }
 }">
-    <h3 class="text-2xl font-bold mb-6 text-drifter-light-brown">Ready to Book?</h3>
-    
-    <!-- Date and Room Selection -->
-    <div class="max-w-2xl mx-auto mb-8 space-y-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div>
-                <label class="block text-drifter-brown mb-2">Check In</label>
-                <input type="date" x-model="checkIn" 
-                    :min="new Date().toISOString().split('T')[0]"
-                    @change="if(checkOut < checkIn) checkOut = new Date(new Date(checkIn).getTime() + 86400000).toISOString().split('T')[0]"
-                    class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
-            </div>
-            <div>
-                <label class="block text-drifter-brown mb-2">Check Out</label>
-                <input type="date" x-model="checkOut" 
-                    :min="checkIn"
-                    class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
-            </div>
-            <div>
-                <label class="block text-drifter-brown mb-2">Rooms</label>
-                <input type="number" x-model="rooms" min="1" max="10" 
-                    class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
-            </div>
-        </div>
-    </div>
+            <h3 class="text-2xl font-bold mb-6 text-drifter-light-brown">Ready to Book?</h3>
 
-    <div class="flex justify-center space-x-4">
-        <!-- <a href="https://www.booking.com/Share-Qac0jn" target="_blank" rel="noopener noreferrer"
+            <!-- Date and Room Selection -->
+            <div class="max-w-2xl mx-auto mb-8 space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <label class="block text-drifter-brown mb-2">Check In</label>
+                        <input type="date" x-model="checkIn" :min="new Date().toISOString().split('T')[0]"
+                            @change="if(checkOut < checkIn) checkOut = new Date(new Date(checkIn).getTime() + 86400000).toISOString().split('T')[0]"
+                            class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
+                    </div>
+                    <div>
+                        <label class="block text-drifter-brown mb-2">Check Out</label>
+                        <input type="date" x-model="checkOut" :min="checkIn"
+                            class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
+                    </div>
+                    <div>
+                        <label class="block text-drifter-brown mb-2">Rooms</label>
+                        <input type="number" x-model="rooms" min="1" max="10"
+                            class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center space-x-4">
+                <!-- <a href="https://www.booking.com/Share-Qac0jn" target="_blank" rel="noopener noreferrer"
             class="bg-drifter-beige text-drifter-brown px-8 py-4 rounded-lg hover:bg-opacity-90 transition text-lg">
             <i class="fas fa-hotel mr-3"></i>Book Online
         </a> -->
-        <a x-bind:href="'https://wa.me/+94771234567?text=' + encodeURIComponent(formatWhatsAppMessage())" 
-            target="_blank" rel="noopener noreferrer"
-            class="bg-drifter-yellow text-drifter-brown px-8 py-4 rounded-lg hover:bg-opacity-90 transition text-lg">
-            <i class="fab fa-whatsapp mr-3"></i>Book Now
-        </a>
-    </div>
-</div>
+                <a x-bind:href="'https://wa.me/+94771234567?text=' + encodeURIComponent(formatWhatsAppMessage())"
+                    target="_blank" rel="noopener noreferrer"
+                    class="bg-drifter-yellow text-drifter-brown px-8 py-4 rounded-lg hover:bg-opacity-90 transition text-lg">
+                    <i class="fab fa-whatsapp mr-3"></i>Book Now
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- Food Section -->
@@ -513,8 +511,10 @@
         <div class="py-4">
             <div class="flex flex-wrap mb-4 justify-center gap-8">
                 <!-- Booking.com Review -->
-                <a href="https://www.booking.com/hotel/lk/drifter.en-gb.html" target="_blank" rel="noopener noreferrer">
-                    <div class="bg-white p-6 rounded-lg shadow-md max-w-sm">
+
+                <div class="bg-white p-6 rounded-lg shadow-md max-w-sm">
+                    <a href="https://www.booking.com/hotel/lk/drifter.en-gb.html" class="h-full" target="_blank"
+                        rel="noopener noreferrer">
                         <div class="flex items-center mb-4">
                             <div class="bg-[#013B94] p-2 rounded">
                                 <img src="./assets/bookingcom.svg" alt="Booking.com" class="h-8">
@@ -529,7 +529,9 @@
                         </div>
                         <div class="text-drifter-brown">"Super clean, cozy, and great vibe place!!! The perfect place in
                             Midigama to solo travel"</div>
-                    </div>
+                    </a>
+
+                </div>
                 </a>
 
                 <!-- Google Review -->
