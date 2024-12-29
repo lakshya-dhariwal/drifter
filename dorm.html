@@ -44,14 +44,14 @@
     checkIn: new Date(Date.now() + 86400000).toISOString().split('T')[0],
     checkOut: new Date(Date.now() + 2 * 86400000).toISOString().split('T')[0],
     beds: 1,
-    roomType: '',
+    roomType: 'mixed',
     prices: {
         'mixed': 10,
         'female': 12,
-    },,
+    },
     init() {
         const params = new URLSearchParams(window.location.search);
-        this.roomType = params.get('type') || 'female';
+        this.roomType = params.get('type') || 'mixed';
         this.beds = parseInt(params.get('beds')) || 1;
     },
     formatWhatsAppMessage() {
