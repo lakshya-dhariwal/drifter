@@ -45,7 +45,10 @@
     checkOut: new Date(Date.now() + 2 * 86400000).toISOString().split('T')[0],
     beds: 1,
     roomType: '',
-    price: 10,
+    prices: {
+        'mixed': 10,
+        'female': 12,
+    },,
     init() {
         const params = new URLSearchParams(window.location.search);
         this.roomType = params.get('type') || 'female';
@@ -86,7 +89,7 @@
         <div class="mt-12 grid md:grid-cols-2 gap-12">
             <div>
                 <h1 class="text-4xl font-bold mb-6">Dorm Room</h1>
-                <p class="text-2xl font-bold text-drifter-light-brown mb-4">From $10/night per bed</p>
+                <p class="text-2xl font-bold text-drifter-light-brown mb-4">From $<span x-text="prices[roomType]"></span>/night per bed</p>
                 <p class="mb-6">Stay in our comfortable dorm rooms with fan cooling. Choose between female-only or mixed
                     dorms for a social and affordable stay experience.</p>
 
@@ -136,11 +139,11 @@
                         <label class="block text-drifter-brown mb-3">Room Type</label>
                         <div class="space-y-2">
                             <label class="flex items-center">
-                                <input type="radio" x-model="roomType" value="female" class="mr-2">
+                                <input type="radio" x-model="roomType" value="female"     class="mr-2 accent-drifter-orange-brown">>
                                 Female Dorm
                             </label>
                             <label class="flex items-center">
-                                <input type="radio" x-model="roomType" value="mixed" class="mr-2">
+                                <input type="radio" x-model="roomType" value="mixed"     class="mr-2 accent-drifter-orange-brown">>
                                 Mixed Dorm
                             </label>
                         </div>
@@ -164,7 +167,7 @@
                 </div>
 
                 <div class="mb-6 text-xl font-bold">
-                    Total: $<span x-text="beds * price"></span> per night
+                    Total: $<span x-text="beds * prices[roomType]"></span> per night
                 </div>
 
                 <a x-bind:href="'https://wa.me/+94771234567?text=' + encodeURIComponent(formatWhatsAppMessage())"

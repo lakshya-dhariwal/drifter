@@ -33,7 +33,7 @@
 
 <body class="bg-drifter-soft-beige text-drifter-brown">
     <div x-data="{ 
-        selectedImage: '',
+        selectedImage:     'https://cdn.drifter.surf/assets/fan/1.jpg',,
         images: {
             'budget-fan': [
                 'https://cdn.drifter.surf/assets/budget/1.jpg',
@@ -174,23 +174,23 @@
                         <label class="block text-drifter-brown mb-3">Room Type</label>
                         <div class="space-y-2">
                             <label class="flex items-center">
-                                <input type="radio" x-model="roomType" value="budget-fan" @change="updateImages()" 
+                                <input type="radio" x-model="roomType" value="budget-fan" @change="updateImages()"
                                     class="mr-2 accent-drifter-orange-brown">
                                 Budget Double Room with Fan ($22/night)
                             </label>
                             <label class="flex items-center">
                                 <input type="radio" x-model="roomType" value="standard-fan" @change="updateImages()"
-                                class="mr-2 accent-drifter-orange-brown">
+                                    class="mr-2 accent-drifter-orange-brown">
                                 Standard Double Room with Fan ($24/night)
                             </label>
                             <label class="flex items-center">
                                 <input type="radio" x-model="roomType" value="balcony-fan" @change="updateImages()"
-                                class="mr-2 accent-drifter-orange-brown">
+                                    class="mr-2 accent-drifter-orange-brown">
                                 Balcony Double Room with Fan ($27/night)
                             </label>
                             <label class="flex items-center">
                                 <input type="radio" x-model="roomType" value="balcony-ac" @change="updateImages()"
-                                class="mr-2 accent-drifter-orange-brown">
+                                    class="mr-2 accent-drifter-orange-brown">
                                 Balcony Double Room with AC ($32/night)
                             </label>
                         </div>
