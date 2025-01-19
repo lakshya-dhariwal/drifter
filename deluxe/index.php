@@ -47,6 +47,31 @@ $alpineData = [
             }
         }
     </script>
+     <script>
+        function handleBooking() {
+            // Get form values
+            const roomType = document.querySelector('input[name="roomType"]:checked').value;
+            const checkIn = document.getElementById('checkIn')?.value;
+            const checkOut = document.getElementById('checkOut')?.value;
+            const beds = document.getElementById('beds')?.value;
+
+            let  message = `Hey there, I want to book ${beds} bed${beds > 1 ? 's' : ''} in the deluxe room `;
+
+
+            // Validate inputs
+            if (checkIn && !checkOut) {
+                message = message + `from ${checkIn} to ${checkOut} please`
+            }
+           
+
+            // Create WhatsApp URL
+            const whatsappUrl = `https://wa.me/+94771234567?text=${encodeURIComponent(message)}`;
+            console.log(whatsappUrl)
+
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
 </head>
 <body class="bg-drifter-soft-beige text-drifter-brown" x-data='<?php echo safeJsonEncode($alpineData); ?>'>
 
@@ -123,19 +148,19 @@ $alpineData = [
                 <div class="space-y-4 mb-8">
                     <div>
                         <label class="block text-drifter-brown mb-2">Check In</label>
-                        <input type="date" x-model="checkIn" 
+                        <input id="checkIn" type="date" x-model="checkIn" 
                                :min="new Date().toISOString().split('T')[0]"
                                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
                     </div>
                     <div>
                         <label class="block text-drifter-brown mb-2">Check Out</label>
-                        <input type="date" x-model="checkOut" 
+                        <input id="checkOut" type="date" x-model="checkOut" 
                                :min="checkIn"
                                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
                     </div>
                     <div>
                         <label class="block text-drifter-brown mb-2">Number of Rooms</label>
-                        <input type="number" x-model="rooms" 
+                        <input id="beds" type="number" x-model="rooms" 
                                min="1" max="<?php echo $deluxeData['max_rooms']; ?>"
                                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
                     </div>
@@ -145,11 +170,10 @@ $alpineData = [
                     Total: $<span x-text="rooms * price"></span> per night
                 </div>
 
-                <a x-bind:href="'https://wa.me/<?php echo htmlspecialchars($navData['whatsapp_number']); ?>?text=' + encodeURIComponent(formatWhatsAppMessage())"
-                   target="_blank" rel="noopener noreferrer"
-                   class="block w-full bg-drifter-yellow text-drifter-brown text-center px-8 py-4 rounded-lg hover:bg-opacity-90 transition text-lg">
+                <button onclick="handleBooking()"
+                    class="block w-full bg-drifter-yellow text-drifter-brown text-center px-8 py-4 rounded-lg hover:bg-opacity-90 transition text-lg">
                     <i class="fab fa-whatsapp mr-3"></i>Book Now
-                </a>
+                </button>
             </div>
         </div>
     </div>

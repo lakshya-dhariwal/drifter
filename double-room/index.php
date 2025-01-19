@@ -37,6 +37,31 @@ $alpineData = [
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script>
+        function handleBooking() {
+            // Get form values
+            const roomType = document.querySelector('input[name="roomType"]:checked').value;
+            const checkIn = document.getElementById('checkin')?.value;
+            const checkOut = document.getElementById('checkout')?.value;
+            const beds = document.getElementById('beds')?.value;
+
+            let  message = `Hey there, I want to book ${beds} bed${beds > 1 ? 's' : ''} in the ${roomType} room `;
+
+
+            // Validate inputs
+            if (checkIn && !checkOut) {
+                message = message + `from ${checkIn} to ${checkOut} please`
+            }
+           
+
+            // Create WhatsApp URL
+            const whatsappUrl = `https://wa.me/+94771234567?text=${encodeURIComponent(message)}`;
+            console.log(whatsappUrl)
+
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -151,17 +176,17 @@ $alpineData = [
 
                     <div>
                         <label class="block text-drifter-brown mb-2">Check In</label>
-                        <input type="date" x-model="checkIn" :min="new Date().toISOString().split('T')[0]"
+                        <input id="checkout" type="date" x-model="checkIn" :min="new Date().toISOString().split('T')[0]"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
                     </div>
                     <div>
                         <label class="block text-drifter-brown mb-2">Check Out</label>
-                        <input type="date" x-model="checkOut" :min="checkIn"
+                        <input id="checkin" type="date" x-model="checkOut" :min="checkIn"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
                     </div>
                     <div>
                         <label class="block text-drifter-brown mb-2">Number of Rooms</label>
-                        <input type="number" x-model="rooms" min="1" max="<?php echo $doubleData['max_rooms']; ?>"
+                        <input id="beds" type="number" x-model="rooms" min="1" max="<?php echo $doubleData['max_rooms']; ?>"
                             class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-drifter-yellow">
                     </div>
                 </div>
@@ -170,11 +195,10 @@ $alpineData = [
                     Total: $<span x-text="rooms * prices[roomType]"></span> per night
                 </div>
 
-                <a x-bind:href="'https://wa.me/<?php echo htmlspecialchars($navData['whatsapp_number']); ?>?text=' + encodeURIComponent(formatWhatsAppMessage())"
-                    target="_blank" rel="noopener noreferrer"
+                <button onclick="handleBooking()"
                     class="block w-full bg-drifter-yellow text-drifter-brown text-center px-8 py-4 rounded-lg hover:bg-opacity-90 transition text-lg">
                     <i class="fab fa-whatsapp mr-3"></i>Book Now
-                </a>
+                </button>
             </div>
         </div>
     </div>
