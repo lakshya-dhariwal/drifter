@@ -1,0 +1,44 @@
+{
+  "title": "Deluxe Double Room AC",
+  "description": "Experience luxury and comfort in our air-conditioned deluxe double room. Perfect for couples or solo travelers seeking a premium stay experience.",
+  "images": [
+      "https://pub-c66176254ddc45bf87d322054aae095b.r2.dev/assets/deluxe/1.jpg",
+      "https://pub-c66176254ddc45bf87d322054aae095b.r2.dev/assets/deluxe/2.jpg",
+      "https://pub-c66176254ddc45bf87d322054aae095b.r2.dev/assets/deluxe/3.jpg",
+      "https://pub-c66176254ddc45bf87d322054aae095b.r2.dev/assets/deluxe/4.jpg"
+  ],
+  "price": 35,
+  "features": [
+      {
+          "icon": "fas fa-snowflake",
+          "text": "Air Conditioning"
+      },
+      {
+          "icon": "fas fa-wifi",
+          "text": "Free WiFi"
+      },
+      {
+          "icon": "fas fa-bed",
+          "text": "Queen Size Bed"
+      },
+      {
+          "icon": "fas fa-shower",
+          "text": "Private Bathroom"
+      },
+      {
+          "icon": "fas fa-couch",
+          "text": "Seating Area"
+      },
+      {
+          "icon": "fas fa-door-closed",
+          "text": "Private Entrance"
+      }
+  ],
+  "policies": [
+      "Check-in: 2:00 PM - 10:00 PM",
+      "Check-out: 11:00 AM",
+      "No smoking",
+      "Max 2 guests"
+  ],
+  "max_rooms": 10
+}

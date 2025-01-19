@@ -1,0 +1,29 @@
+{
+    "logo": "https://cdn.drifter.surf/assets/logo-small.jpg",
+    "links": [
+        { "text": "Home", "href": "#home" },
+        { "text": "About", "href": "#about" },
+        { "text": "Rooms", "href": "#rooms" },
+        { "text": "Food", "href": "#food" },
+        { "text": "Blog", "href": "#blog" },
+        { "text": "FAQs", "href": "#faq" },
+        { "text": "Contact Us", "href": "#contact-us" }
+    ],
+    "socialLinks": [
+        {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/drifter_midigama/",
+            "icon": "fab fa-instagram"
+        },
+        {
+            "platform": "Booking.com",
+            "url": "https://www.booking.com/Share-Qac0jn",
+            "icon": "fas fa-hotel"
+        },
+        {
+            "platform": "WhatsApp",
+            "url": "https://wa.me/+94771234567",
+            "icon": "fab fa-whatsapp"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "title": "Latest from Our Blog",
+    "posts": [
+      {
+        "title": "Best Surf Spots in Sri Lanka",
+        "description": "Discover the hidden gems and popular breaks along our beautiful coastline...",
+        "image": "https://cdn.drifter.surf/assets/food-1.png",
+        "link": "/blog/surf-spots"
+      },
+      {
+        "title": "Local Food Guide",
+        "description": "Explore the rich flavors of Sri Lankan cuisine and our favorite local spots...",
+        "image": "https://cdn.drifter.surf/assets/food-1.png",
+        "link": "/blog/local-food"
+      },
+      {
+        "title": "Beginner's Guide to Surfing",
+        "description": "Everything you need to know before catching your first wave...",
+        "image": "https://cdn.drifter.surf/assets/food-1.png",
+        "link": "/blog/surfing-guide"
+      }
+    ],
+    "cta": {
+      "text": "View All Blog Posts",
+      "link": "/blog"
+    }
+  }

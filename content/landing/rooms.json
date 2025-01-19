@@ -1,0 +1,98 @@
+{
+    "title": "Our Rooms",
+    "rooms": [
+      {
+        "type": "Dorm Fan - Female and Mixed",
+        "description": "Shared dormitory with fan, suitable for female and mixed groups.",
+        "price": "From $10/night",
+        "link": "/dorm.html?type=mixed",
+        "images": [
+          "https://cdn.drifter.surf/assets/dorm/1.jpg",
+          "https://cdn.drifter.surf/assets/dorm/2.jpg",
+          "https://cdn.drifter.surf/assets/dorm/3.jpg",
+          "https://cdn.drifter.surf/assets/dorm/4.jpg",
+          "https://cdn.drifter.surf/assets/dorm/5.jpg",
+          "https://cdn.drifter.surf/assets/dorm/6.jpg"
+        ]
+      },
+      {
+        "type": "Budget Double Room Fan",
+        "description": "Affordable double room with fan for budget-conscious travelers.",
+        "price": "From $22/night",
+        "link": "/double-room.html?type=budget-fan",
+        "images": [
+          "https://cdn.drifter.surf/assets/budget/1.jpg",
+          "https://cdn.drifter.surf/assets/budget/2.jpg",
+          "https://cdn.drifter.surf/assets/budget/3.jpg",
+          "https://cdn.drifter.surf/assets/budget/4.jpg",
+          "https://cdn.drifter.surf/assets/budget/5.jpg",
+          "https://cdn.drifter.surf/assets/budget/6.jpg",
+          "https://cdn.drifter.surf/assets/budget/7.jpg"
+        ]
+      },
+      {
+        "type": "Double Room Fan",
+        "description": "Comfortable double room with fan for a pleasant stay.",
+        "price": "From $24/night",
+        "link": "/double-room.html?type=standard-fan",
+        "images": [
+          "https://cdn.drifter.surf/assets/fan/1.jpg",
+          "https://cdn.drifter.surf/assets/fan/2.jpg",
+          "https://cdn.drifter.surf/assets/fan/3.jpg",
+          "https://cdn.drifter.surf/assets/fan/4.jpg",
+          "https://cdn.drifter.surf/assets/fan/5.jpg",
+          "https://cdn.drifter.surf/assets/fan/6.jpg",
+          "https://cdn.drifter.surf/assets/fan/7.jpg",
+          "https://cdn.drifter.surf/assets/fan/8.jpg",
+          "https://cdn.drifter.surf/assets/fan/9.jpg",
+          "https://cdn.drifter.surf/assets/fan/10.jpg",
+          "https://cdn.drifter.surf/assets/fan/11.jpg"
+        ]
+      },
+      {
+        "type": "Balcony Double Room Fan",
+        "description": "Double room with fan and a private balcony with an amazing view.",
+        "price": "From $27/night",
+        "link": "/double-room.html?type=balcony-fan",
+        "images": [
+          "https://cdn.drifter.surf/assets/fan-balcony/1.jpg",
+          "https://cdn.drifter.surf/assets/fan-balcony/2.jpg",
+          "https://cdn.drifter.surf/assets/fan-balcony/3.jpg",
+          "https://cdn.drifter.surf/assets/fan-balcony/4.jpg",
+          "https://cdn.drifter.surf/assets/fan-balcony/5.jpg",
+          "https://cdn.drifter.surf/assets/fan-balcony/6.jpg",
+          "https://cdn.drifter.surf/assets/fan-balcony/7.jpg"
+        ]
+      },
+      {
+        "type": "Balcony Double Room AC",
+        "description": "Double room with air conditioning and a private balcony.",
+        "price": "From $32/night",
+        "link": "/double-room.html?type=balcony-ac",
+        "images": [
+          "https://cdn.drifter.surf/assets/ac-balcony/1.jpg",
+          "https://cdn.drifter.surf/assets/ac-balcony/2.jpg",
+          "https://cdn.drifter.surf/assets/ac-balcony/3.jpg",
+          "https://cdn.drifter.surf/assets/ac-balcony/4.jpg",
+          "https://cdn.drifter.surf/assets/ac-balcony/5.jpg"
+        ]
+      },
+      {
+        "type": "Deluxe Double Room AC",
+        "description": "Luxurious double room with air conditioning and premium amenities.",
+        "price": "From $35/night",
+        "link": "/deluxe.html",
+        "images": [
+          "https://cdn.drifter.surf/assets/deluxe/1.jpg",
+          "https://cdn.drifter.surf/assets/deluxe/2.jpg",
+          "https://cdn.drifter.surf/assets/deluxe/3.jpg",
+          "https://cdn.drifter.surf/assets/deluxe/4.jpg"
+        ]
+      }
+    ],
+    "bookingCTA": {
+      "title": "Ready to Book?",
+      "whatsappMessage": "Hey there, I want to book {rooms} room{plural} from {checkIn} to {checkOut} please",
+      "whatsappLink": "https://wa.me/+94771234567"
+    }
+  }

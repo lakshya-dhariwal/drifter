@@ -1,0 +1,20 @@
+{
+    "title": "Our Kitchen",
+    "subtitle": "Fresh Local Cuisine",
+    "description": "Enjoy delicious Sri Lankan and international dishes prepared with fresh, local ingredients.",
+    "features": [
+      "Trained Baristas & Good Coffee",
+      "Local & International Cuisines",
+      "Vegetarian & Vegan Options"
+    ],
+    "menuLink": {
+      "text": "View Menu",
+      "url": "https://www.google.com/maps/place/Drifter+-+Rooms+%26+Food/@5.9681045,80.3892405,1133m/data=!3m1!1e3!4m9!3m8!1s0x3ae114c6ceebddd5:0xf2bab48e3c14ec96!5m2!4m1!1i2!8m2!3d5.9681045!4d80.3918154!16s%2Fg%2F11dzdc9_b5?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+    },
+    "images": [
+      "https://cdn.drifter.surf/assets/food-1.png",
+      "https://cdn.drifter.surf/assets/food-2.png",
+      "https://cdn.drifter.surf/assets/kitchen.jpg",
+      "https://cdn.drifter.surf/assets/cafe.jpg"
+    ]
+  }

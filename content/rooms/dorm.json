@@ -1,0 +1,44 @@
+{
+  "title": "Dorm Room",
+  "description": "Stay in our comfortable dorm rooms with fan cooling. Choose between female-only or mixed dorms for a social and affordable stay experience.",
+  "features": [
+    {
+      "icon": "fas fa-fan",
+      "text": "Cooling Fan"
+    },
+    {
+      "icon": "fas fa-wifi",
+      "text": "Free WiFi"
+    },
+    {
+      "icon": "fas fa-bed",
+      "text": "Comfortable Bunks"
+    },
+    {
+      "icon": "fas fa-lock",
+      "text": "Lockers Available"
+    }
+  ],
+  "policies": [
+    "Check-in: 2:00 PM - 10:00 PM",
+    "Check-out: 11:00 AM",
+    "No smoking",
+    "Female dorm: Female guests only",
+    "Mixed dorm: All guests welcome"
+  ],
+  "images": [
+    "https://cdn.drifter.surf/assets/dorm/1.jpg",
+    "https://cdn.drifter.surf/assets/dorm/2.jpg",
+    "https://cdn.drifter.surf/assets/dorm/3.jpg",
+    "https://cdn.drifter.surf/assets/dorm/4.jpg",
+    "https://cdn.drifter.surf/assets/dorm/5.jpg",
+    "https://cdn.drifter.surf/assets/dorm/6.jpg"
+  ],
+  "prices": {
+    "mixed": 10,
+    "female": 12
+  },
+  "default_room_type": "mixed",
+  "default_beds": 1,
+  "max_beds": 6
+}

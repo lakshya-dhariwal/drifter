@@ -1,0 +1,56 @@
+{
+  "title": "Double Room",
+  "description": "Experience comfort and relaxation in our well-appointed double rooms. Choose from various options to suit your preferences and budget.",
+  "images": {
+      "budget-fan": [
+          "https://cdn.drifter.surf/assets/budget/1.jpg",
+          "https://cdn.drifter.surf/assets/budget/2.jpg",
+          "https://cdn.drifter.surf/assets/budget/3.jpg",
+          "https://cdn.drifter.surf/assets/budget/4.jpg"
+      ],
+      "standard-fan": [
+          "https://cdn.drifter.surf/assets/fan/1.jpg",
+          "https://cdn.drifter.surf/assets/fan/2.jpg",
+          "https://cdn.drifter.surf/assets/fan/3.jpg",
+          "https://cdn.drifter.surf/assets/fan/4.jpg"
+      ],
+      "balcony-fan": [
+          "https://cdn.drifter.surf/assets/fan-balcony/1.jpg",
+          "https://cdn.drifter.surf/assets/fan-balcony/2.jpg",
+          "https://cdn.drifter.surf/assets/fan-balcony/3.jpg"
+      ],
+      "balcony-ac": [
+          "https://cdn.drifter.surf/assets/ac-balcony/1.jpg",
+          "https://cdn.drifter.surf/assets/ac-balcony/2.jpg",
+          "https://cdn.drifter.surf/assets/ac-balcony/3.jpg"
+      ]
+  },
+  "prices": {
+      "budget-fan": 22,
+      "standard-fan": 24,
+      "balcony-fan": 27,
+      "balcony-ac": 32
+  },
+  "features": [
+      {
+          "icon": "fas fa-wifi",
+          "text": "Free WiFi"
+      },
+      {
+          "icon": "fas fa-bed",
+          "text": "Double Bed"
+      },
+      {
+          "icon": "fas fa-shower",
+          "text": "Private Bathroom"
+      }
+  ],
+  "policies": [
+      "Check-in: 2:00 PM - 10:00 PM",
+      "Check-out: 11:00 AM",
+      "No smoking",
+      "Max 2 guests per room"
+  ],
+  "max_rooms": 5,
+  "default_room_type": "standard-fan"
+}

@@ -1,0 +1,16 @@
+{
+    "logoUrl": "https://cdn.drifter.surf/assets/transaprent-beige-logo.png",
+    "tagline": "Your Surf Paradise in the heart of Midigama",
+    "ctaButtons": [
+      {
+        "text": "View Rooms",
+        "link": "#rooms",
+        "class": "bg-drifter-yellow text-drifter-brown px-6 py-3 rounded-lg hover:bg-opacity-90 transition"
+      },
+      {
+        "text": "Our Kitchen",
+        "link": "#food",
+        "class": "bg-drifter-beige text-drifter-brown px-6 py-3 rounded-lg hover:bg-opacity-90 transition"
+      }
+    ]
+  }

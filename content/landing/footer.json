@@ -1,0 +1,47 @@
+{
+  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4934.406942512234!2d80.3918154!3d5.9681045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae114c6ceebddd5%3A0xf2bab48e3c14ec96!2sDrifter%20-%20Rooms%20%26%20Food!5e1!3m2!1sen!2slk!4v1734244176179!5m2!1sen!2slk",
+  "contact": {
+      "phone": "+94 77 123 4567",
+      "location": "Midigama, Sri Lanka"
+  },
+  "socialLinks": [
+      {
+          "platform": "Instagram",
+          "url": "https://www.instagram.com/drifter_midigama/",
+          "icon": "fab fa-instagram"
+      },
+      {
+          "platform": "Booking.com",
+          "url": "https://www.booking.com/Share-Qac0jn",
+          "icon": "fas fa-hotel"
+      },
+      {
+          "platform": "WhatsApp",
+          "url": "https://wa.me/+94771234567",
+          "icon": "fab fa-whatsapp"
+      }
+  ],
+  "bookingReviews": [
+      {
+          "text": "This is really a 'sweet spot'! The location is close to the beach for surfing and also close to the jungle to practice yoga at 'senses.srilanka'. People here are super easy going. Max and the boys are very helpful. The food is soo delicious, you get addicted to it ;-)!",
+          "author": "Soa, Switzerland"
+      },
+      {
+          "text": "This is a great place if you search for a comfortable stay in Midigama especially if you are into surfing. The dorm rooms are comfortable with wide bunk beds and lockers, there is a fully equipped kitchen with a fridge, a corner for yoga, a cozy chill area and also a surfboard rack. The food is super delicious and the staff was so welcoming. From getting a scooter to find the best waves Max is super friendly and helps you with every issue.",
+          "author": "Johanna, Germany"
+      }
+  ],
+  "googleReviews": [
+      {
+          "text": "One of the best hostels in Sri Lanka!!! The hostel has a friendly and welcoming vibe that makes you want to stay longer. In total, I spent over 3 weeks here when initially booked for only a few days. The owner Max and the staff are super warm and the best people to hang out with. The coffee and food is excellent!! The location is close to Weligama and Ahangama and can find buses and tuk tuks nearby as well as the train. Would happily extend my stay here if I had more time and would love to come back ❤️❤️",
+          "author": "Mihir Shah",
+          "link": "https://maps.app.goo.gl/e2gKhXVVzKZefydS7"
+      },
+      {
+          "text": "Drifter was an amazing hostel with a great chill out space, kitchen (which was rare to find in hostels), space for surfboards, and delicious coffee! Max owner made us feel so at home, and really looks after the people who stay. One night he specially ordered some dinner from the kitchen for me to avoid having to go out in the torrential rain - I was so grateful!! Also, Youkan makes the BEST mango smoothie bowl and chicken salad bowl in all of Midigama 😛",
+          "author": "Olivia Lotz",
+          "link": "https://maps.app.goo.gl/axpi4h6L48r9CXMW8"
+      }
+  ],
+  "copyright": "© 2024 Drifter Surf Hostel. All rights reserved."
+}
