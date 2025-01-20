@@ -1,3 +1,4 @@
+version: "3.8"
 services:
   nginx:
     image: nginx:latest
@@ -5,6 +6,8 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       - ./nginx/ssl:/etc/nginx/ssl
+      - ./php-app:/var/www/html/app  # Mount PHP app files
+      - ./wordpress:/var/www/html/blog  # Mount WordPress files
     ports:
       - "80:80"  # Map host port 80 to container port 80
       - "443:443"  # Map host port 443 to container port 443 (for HTTPS)
@@ -19,14 +22,14 @@ services:
       dockerfile: Dockerfile
     container_name: php-app
     volumes:
-      - ./root:/var/www/html  # Mount your PHP app files
+      - ./php-app:/var/www/html  # Mount PHP app files
     restart: always
 
   wordpress:
     image: wordpress:latest
     container_name: wordpress
     volumes:
-      - ./blog/wp-content:/var/www/html/wp-content
+      - ./wordpress:/var/www/html  # Mount WordPress files
     environment:
       WORDPRESS_DB_NAME: wordpress
       WORDPRESS_TABLE_PREFIX: wp_
@@ -45,9 +48,9 @@ services:
       - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_USER: root
-      MYSQL_PASSWORD: password
       MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
     restart: always
 
 volumes:
