@@ -1,7 +1,7 @@
 {
     "nav": {
         "logo": "https://cdn.drifter.surf/assets/logo-small.jpg",
-        "home_link": "index.html",
+        "home_link": "/",
         "home_text": "Back to Home"
     },
     "footer": {

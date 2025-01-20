@@ -5,7 +5,7 @@
         "type": "Dorm Fan - Female and Mixed",
         "description": "Shared dormitory with fan, suitable for female and mixed groups.",
         "price": "From $10/night",
-        "link": "/dorm.html?type=mixed",
+        "link": "/dorm?type=mixed",
         "images": [
           "https://cdn.drifter.surf/assets/dorm/1.jpg",
           "https://cdn.drifter.surf/assets/dorm/2.jpg",
@@ -19,7 +19,7 @@
         "type": "Budget Double Room Fan",
         "description": "Affordable double room with fan for budget-conscious travelers.",
         "price": "From $22/night",
-        "link": "/double-room.html?type=budget-fan",
+        "link": "/double-room?type=budget-fan",
         "images": [
           "https://cdn.drifter.surf/assets/budget/1.jpg",
           "https://cdn.drifter.surf/assets/budget/2.jpg",
@@ -34,7 +34,7 @@
         "type": "Double Room Fan",
         "description": "Comfortable double room with fan for a pleasant stay.",
         "price": "From $24/night",
-        "link": "/double-room.html?type=standard-fan",
+        "link": "/double-room?type=standard-fan",
         "images": [
           "https://cdn.drifter.surf/assets/fan/1.jpg",
           "https://cdn.drifter.surf/assets/fan/2.jpg",
@@ -53,7 +53,7 @@
         "type": "Balcony Double Room Fan",
         "description": "Double room with fan and a private balcony with an amazing view.",
         "price": "From $27/night",
-        "link": "/double-room.html?type=balcony-fan",
+        "link": "/double-room?type=balcony-fan",
         "images": [
           "https://cdn.drifter.surf/assets/fan-balcony/1.jpg",
           "https://cdn.drifter.surf/assets/fan-balcony/2.jpg",
@@ -68,7 +68,7 @@
         "type": "Balcony Double Room AC",
         "description": "Double room with air conditioning and a private balcony.",
         "price": "From $32/night",
-        "link": "/double-room.html?type=balcony-ac",
+        "link": "/double-room?type=balcony-ac",
         "images": [
           "https://cdn.drifter.surf/assets/ac-balcony/1.jpg",
           "https://cdn.drifter.surf/assets/ac-balcony/2.jpg",
@@ -81,7 +81,7 @@
         "type": "Deluxe Double Room AC",
         "description": "Luxurious double room with air conditioning and premium amenities.",
         "price": "From $35/night",
-        "link": "/deluxe.html",
+        "link": "/deluxe",
         "images": [
           "https://cdn.drifter.surf/assets/deluxe/1.jpg",
           "https://cdn.drifter.surf/assets/deluxe/2.jpg",
