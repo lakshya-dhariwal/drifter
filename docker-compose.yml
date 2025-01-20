@@ -6,9 +6,10 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       - ./nginx/ssl:/etc/nginx/ssl
+      - ./root:/var/www/html/app  # Mount your PHP app
+      - ./blog/wp-content:/var/www/html/blog/wp-content  # Mount WordPress content
     ports:
-      - "80:80"
-      - "443:443"
+      - "8000:80"
     depends_on:
       - php-app
       - wordpress
