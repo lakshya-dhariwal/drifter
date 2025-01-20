@@ -16,9 +16,6 @@ $alpineData = [
     "checkOut" => "new Date(Date.now() + 2 * 86400000).toISOString().split('T')[0]",
     "rooms" => 1,
     "price" => $deluxeData["price"],
-    "formatWhatsAppMessage()" => "function() {
-        return `Hey there, I want to book ${this.rooms} Deluxe Double Room AC from ${this.checkIn} to ${this.checkOut} please`;
-    }"
 ];
 ?>
 <!DOCTYPE html>

@@ -1,8 +1,16 @@
-# Dockerfile
-FROM nginx:latest
+FROM php:8.1-apache
 
-# Copy static files to Nginx's default directory
-COPY static/ /usr/share/nginx/html/
+# Enable Apache mod_rewrite
+RUN a2enmod rewrite
 
-# Expose port 80 for the Nginx server
+# Copy PHP app files
+COPY root/ /var/www/html/
+
+# Adjust permissions
+RUN chown -R www-data:www-data /var/www/html
+
+# Set the working directory
+WORKDIR /var/www/html
+
+# Expose the port
 EXPOSE 80
