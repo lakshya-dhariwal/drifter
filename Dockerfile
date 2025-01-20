@@ -1,16 +1,13 @@
 FROM php:8.1-apache
 
-# Enable Apache mod_rewrite
+# Enable Apache rewrite module
 RUN a2enmod rewrite
-
-# Copy PHP app files
-COPY root/ /var/www/html/
-
-# Adjust permissions
-RUN chown -R www-data:www-data /var/www/html
 
 # Set the working directory
 WORKDIR /var/www/html
 
-# Expose the port
+# Expose port 80
 EXPOSE 80
+
+# Start Apache in the foreground
+CMD ["apache2-foreground"]
