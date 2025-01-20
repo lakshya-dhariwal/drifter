@@ -9,8 +9,8 @@ services:
       - ./php-app:/var/www/html/app  # Mount PHP app files
       - ./wordpress:/var/www/html/blog  # Mount WordPress files
     ports:
-      - "80:80"  # Map host port 80 to container port 80
-      - "443:443"  # Map host port 443 to container port 443 (for HTTPS)
+      - "80:80"
+      - "443:443"
     depends_on:
       - php-app
       - wordpress
@@ -47,7 +47,7 @@ services:
       - db_data:/var/lib/mysql
       - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: wordpress
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
